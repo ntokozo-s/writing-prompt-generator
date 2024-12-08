@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Writing Prompt Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css">
 </head>
 
@@ -15,17 +16,15 @@
     <div class="container">
 
         <main>
-            <form>
+            <form id="story-prompt-form">
                 <input type="text" placeholder="Generate a short story prompt from a theme or word" autocomplete="off"
                     class="prompt-generator" autofocus required />
                 <input type="submit" class="submit-button" />
             </form>
             <div class="short-story">
                 <div class="scroll">📜</div>
-                <div class="story-prompt"> Write a story about a young prince who has to choose between the throne he is
-                    destined for, and pursuing
-                    the
-                    truest love he's ever known.</div>
+                <div class="story-prompt" id="story-prompt"> Write a story about a prince who has to choose between the
+                    throne he is destined for and the truest love he has ever known.</div>
             </div>
         </main>
     </div>
