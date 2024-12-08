@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AI Writing Prompt Generator</title>
     <link rel="stylesheet" href="src/styles.css">
 </head>
 
@@ -12,17 +12,24 @@
     <header>
         <h1>AI short-story prompt generator</h1>
     </header>
-    <main>
-        <form>
-            <input type="text" placeholder="Generate a short story prompt from a single word" autocomplete="off"
-                autofocus required />
-            <input type="submit" />
-        </form>
-        <div>
-            Write a story about a young prince who has to choose between the throne he is destined for, and pursuing the
-            truest love he's ever known.
-        </div>
-    </main>
+    <div class="container">
+
+        <main>
+            <form>
+                <input type="text" placeholder="Generate a short story prompt from a theme or word" autocomplete="off"
+                    class="prompt-generator" autofocus required />
+                <input type="submit" class="submit-button" />
+            </form>
+            <div class="short-story">
+                <div class="scroll">📜</div>
+                <div class="story-prompt"> Write a story about a young prince who has to choose between the throne he is
+                    destined for, and pursuing
+                    the
+                    truest love he's ever known.</div>
+            </div>
+        </main>
+    </div>
+
 
 
     <footer>
