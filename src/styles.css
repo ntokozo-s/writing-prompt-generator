@@ -49,12 +49,11 @@ form {
   padding: 20px;
 }
 .scroll {
-  font-size: 60px;
+  font-size: 80px;
   margin-right: 5px;
 }
 .story-prompt {
   font-size: 18px;
-  margin-top: 20px;
 }
 a {
   color: #522e24;
