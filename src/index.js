@@ -17,6 +17,9 @@ function generatePrompt(event) {
   let prompt = `User instructions: Generate a short-story prompt about ${promptGeneratorInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let shortStoryElement = document.querySelector("#story-prompt");
+  shortStoryElement.innerHTML = `<div class="generating">⏳ Generating your short-story prompt...</div>`;
+
   axios.get(apiURL).then(displayPrompt);
 }
 

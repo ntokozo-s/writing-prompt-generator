@@ -44,16 +44,27 @@ form {
   margin-left: 10px;
   padding: 12px 22px;
 }
+.hint {
+  color: #522e24;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
 .short-story {
   display: flex;
   padding: 20px;
 }
-.scroll {
+.scroll-icon {
   font-size: 80px;
   margin-right: 5px;
 }
 .story-prompt {
-  font-size: 18px;
+  font-size: 16px;
+}
+.placeholder-text {
+  font-style: italic;
+  margin-top: 50px;
+  opacity: 0.8;
 }
 a {
   color: #522e24;
@@ -61,4 +72,19 @@ a {
 footer {
   font-size: 14px;
   text-align: center;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  margin-top: 50px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

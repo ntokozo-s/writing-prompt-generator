@@ -14,20 +14,23 @@
     <header>
         <h1>AI short-story prompt generator</h1>
     </header>
-    <div class="container">
-
-        <main>
+    <main>
+        <div class="container">
             <form id="story-prompt-form">
-                <input type="text" placeholder="Generate a short story prompt from a theme or word" autocomplete="off"
+                <input type="text" placeholder="Generate a short story prompt from a word or theme" autocomplete="off"
                     class="prompt-generator" id="user-instructions" required />
                 <input type="submit" class="submit-button" />
             </form>
-            <div class="short-story">
-                <div class="scroll">📜</div>
-                <div class="story-prompt" id="story-prompt"></div>
+            <div class="hint">e.g., crown, echanted forest, flour, man travelling on horseback ...</div>
+            <div class="short-story" id="short-story">
+                <div class="scroll-icon">📜</div>
+                <div class="story-prompt" id="story-prompt">
+                    <p class="placeholder-text">Start writing your next great story!✍️</p>
+                </div>
             </div>
-        </main>
-    </div>
+
+        </div>
+    </main>
 
 
 
